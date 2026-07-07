@@ -1,11 +1,7 @@
-- name: play level variables
+- name: inventory level variables
   hosts: local
   connection: local
-  vars:
-    COURSE: "DevOps with AWS"
-    DURATION: "140 Hrs"
-    TRAINER: "Siva Kumar Reddy"
   tasks:
-    - name: Print the play level variable
+    - name: Print the inventory level variable
       ansible.builtin.debug:
         msg: "Course is: {{ COURSE }}"
