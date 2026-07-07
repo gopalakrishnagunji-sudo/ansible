@@ -7,9 +7,5 @@
     TRAINER: "Siva Kumar Reddy"
   tasks:
     - name: Print the play level variable
-      vars:
-        COURSE: "Ansible for DevOps"
-        DURATION: "10 Hrs"
-        TRAINER: "Siva Kumar"
       ansible.builtin.debug:
         msg: "Course is: {{ COURSE }}"
