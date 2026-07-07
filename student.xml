@@ -1,0 +1,57 @@
+<students> 
+    <student>
+        <name>Durga Gunji</name>
+        <age>32</age>
+        <email>durga.gunji@paypal.com</email>
+        <address>
+            <street>5 colby ct</street>
+            <city>New York</city>
+            <state>NY</state>
+            <zip>11040</zip>
+        </address>
+        <address>
+            <permanent>
+            <street>5 colby ct</street>
+            <city>New York</city>
+            <state>NY</state>
+            <zip>11040</zip>
+            </permanent>
+
+            <current>
+            <street>5 colby ct</street>
+            <city>New Haven</city>
+            <state>CT</state>
+            <zip>06515</zip>
+            </current>
+        </address>
+    </student>
+
+
+<student>
+        <name>Anusha Gunji</name>
+        <age>32</age>
+        <email>durga.gunji@paypal.com</email>
+        <address>
+            <street>5 colby ct</street>
+            <city>New York</city>
+            <state>NY</state>
+            <zip>11040</zip>
+        </address>
+        <address>
+            <permanent>
+            <street>5 colby ct</street>
+            <city>New York</city>
+            <state>NY</state>
+            <zip>11040</zip>
+            </permanent>
+
+            <current>
+            <street>5 colby ct</street>
+            <city>New Haven</city>
+            <state>CT</state>
+            <zip>06515</zip>
+            </current>
+        </address>
+    </student>
+
+</students>

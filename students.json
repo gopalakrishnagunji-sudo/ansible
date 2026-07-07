@@ -1,0 +1,54 @@
+{
+    "students": [
+        {
+                "first_name": "John",
+                "last_name": "Doe",
+                "age": 30,
+                "email": "john.doe@example.com",
+                "dob": "1993-05-15",
+    "address": [
+        {
+            "type": "permanent",
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        },
+        {
+            "type": "current",
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        }
+    ],
+    "skills": ["Python", "Ansible", "Linux", "Networking"]
+
+        },
+        {
+             "first_name": "John",
+    "last_name": "Doe",
+    "age": 30,
+    "email": "john.doe@example.com",
+    "dob": "1993-05-15",
+    "address": [
+        {
+            "type": "permanent",
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        },
+         {
+            "type": "current",
+            "street": "123 Main St",
+            "city": "Anytown",
+            "state": "CA",
+            "zip": "12345"
+        }
+    ],
+    "skills": ["Python", "Ansible", "Linux", "Networking"]
+        }
+    ]
+   
+}
