@@ -1,0 +1,24 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    PROGRAM: "DevSecOps with AWS" #String
+    DURATION: 140 #INT/NUMBER
+    IS_LIVE: true #BOOLEAN
+    DETAILS: #MAP/DICTIONARY
+        MONTHS: 4
+        TRAINER: "SivaKumar Reddy"
+    TOPICS: #List/Array -/[]
+        - Ansible
+        - Terraform
+        - Docker
+        - Kubernetes
+  tasks:
+  - name: print variables
+    ansible.builtin.debug:
+      msg: | 
+        program: {{ PROGRAM }}
+        The course duration is: {{ DURATION }}
+        Is it live?: {{ IS_LIVE }}
+        The course details are: {{ DETAILS }}
+        The topics covered are: {{ TOPICS }}  
