@@ -3,7 +3,16 @@
   connection: local
   gather_facts: false
 
+  vars:
+    topics: linux, ansible, docker, kubernetes, terraform
+
   tasks:
     - name: Greeting
       ansible.builtin.debug:
         msg: "Hi Durga Gunji, {{ GREETING | default('Good Morning') }}"
+
+    - name: convert string to list
+      ansible.builtin.debug:
+        msg: "The topics are {{ topics | split(',') }}"    
+
+    
