@@ -1,0 +1,8 @@
+- name: demo on conditions 
+  hosts: local
+  connection: local
+  vars:
+  - name: check it live or not
+    ansible.builtin.debug:
+      msg: "Yes, the course is live"
+    when: IS_LIVE
