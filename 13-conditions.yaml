@@ -1,4 +1,4 @@
--name: check a number less tha 10 or not
+- name: check a number less tha 10 or not
   hosts: local
   connection: local
   vars:
