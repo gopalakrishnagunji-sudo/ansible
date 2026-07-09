@@ -1,7 +1,6 @@
 - name: Demo on filters
   hosts: local
   connection: local
-  gather_facts: false
 
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
@@ -13,6 +12,6 @@
 
     - name: convert string to list
       ansible.builtin.debug:
-        msg: "The topics are {{ topics | split(',') }}"    
+        msg: "{{ topics | split(',') }}"    
 
     
