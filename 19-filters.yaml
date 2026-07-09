@@ -5,10 +5,10 @@
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
 
-  tags:
-    name: ansible
-    project: roboshop
-    component: catalogue
+    tags:
+      name: ansible
+      project: roboshop
+      component: catalogue
 
   tasks:
     - name: Greeting
