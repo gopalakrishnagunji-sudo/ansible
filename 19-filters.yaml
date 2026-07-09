@@ -5,7 +5,7 @@
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
 
-    tags:
+    tagsList: #  tags is areserved word in ansible
       name: ansible
       project: roboshop
       component: catalogue
