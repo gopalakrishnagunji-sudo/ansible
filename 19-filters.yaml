@@ -5,6 +5,11 @@
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
 
+  tags:
+    name: ansible
+    project: roboshop
+    component: catalogue
+
   tasks:
     - name: Greeting
       ansible.builtin.debug:
@@ -14,4 +19,6 @@
       ansible.builtin.debug:
         msg: "{{ topics | split(',') }}"    
 
-    
+    - name: convert map to list
+      ansible.builtin.debug:
+        msg: "{{ tags | dict2items }}"
