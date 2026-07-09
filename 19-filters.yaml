@@ -2,6 +2,6 @@
   hosts: local
   connection: local
   vars:
-    - name: greeting 
-      ansible.builtin.debug:
-        msg: "Hi Durga Gunji, {{GREETING | default('Good Morning') }}"
+  - name: greeting 
+    ansible.builtin.debug:
+      msg: "Hi Durga Gunji, {{GREETING | default('Good Morning') }}"
