@@ -5,10 +5,25 @@
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
 
-    tagsList: #  tags is areserved word in ansible
+    tagsMaps: #  tags is areserved word in ansible
       name: ansible
       project: roboshop
       component: catalogue
+    tagsList:  [
+        {
+            "key": "name",
+            "value": "ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
+
 
   tasks:
     - name: Greeting
@@ -21,4 +36,8 @@
 
     - name: convert map to list
       ansible.builtin.debug:
-        msg: "{{ tagsList | dict2items }}"
+        msg: "{{ tagsMaps | dict2items }}"
+
+    - name: convert List to map
+      ansible.builtin.debug:
+        msg: "{{ tagsList | items2dict  }}"
