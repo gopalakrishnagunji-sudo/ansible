@@ -2,7 +2,9 @@
   hosts: local
   connection: local
   vars:
+    IS_LIVE: true #BOOLEAN
+  tasks:
   - name: check it live or not
     ansible.builtin.debug:
       msg: "Yes, the course is live"
-    when: IS_LIVE
+    when: IS_LIVE 
