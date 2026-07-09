@@ -1,7 +1,9 @@
-- name: demo on filters 
+- name: Demo on filters
   hosts: local
   connection: local
-  vars:
-  - name: greeting 
-    ansible.builtin.debug:
-      msg: "Hi Durga Gunji, {{GREETING | default('Good Morning') }}"
+  gather_facts: false
+
+  tasks:
+    - name: Greeting
+      ansible.builtin.debug:
+        msg: "Hi Durga Gunji, {{ GREETING | default('Good Morning') }}"
