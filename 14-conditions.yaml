@@ -6,3 +6,13 @@
     ansible.builtin.debug:
       msg: "The ansible version is {{ ansible_version.full }}"
       msg: "{{ ansible_facts }}"
+
+  - name: check redhat or not 
+    ansible.builtin.debug:
+      msg: "Yes, it is redhat"
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: check Debian or not 
+    ansible.builtin.debug:
+      msg: "Yes, it is Debian"
+    when: ansible_facts.os_family == "Debian"
