@@ -1,0 +1,17 @@
+- name: install packages
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: install packages
+      ansible.builtin.package:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop: # list of map
+        - { name: "git", state: "absent" } # map /dict
+        - { name: "vim", state: "absent" }
+        - { name: "tree", state: "absent" }
+        - { name: "nginx", state: "absent" }
+        - { name: "mysql", state: "absent" }
+        - { name: "zip", state: "absent" }
+        - { name: "python3-pip", state: "present" }
