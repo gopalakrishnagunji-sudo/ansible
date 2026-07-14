@@ -5,7 +5,7 @@
   vars:
     topics: linux, ansible, docker, kubernetes, terraform
     course: "DevOps with Ansible"
-    myIp: "234.56.78.90"
+    myIp: "246.56.78.90"
 
     tagsMaps: #  tags is areserved word in ansible
       name: ansible
