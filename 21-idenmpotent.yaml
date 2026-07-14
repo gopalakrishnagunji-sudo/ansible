@@ -1,0 +1,8 @@
+- name: check idempotency
+  become: yes
+  hosts: localhost
+  connection: local
+  tasks:
+    -name: user creation
+     ansible.builtin.user:
+       name: gopal
